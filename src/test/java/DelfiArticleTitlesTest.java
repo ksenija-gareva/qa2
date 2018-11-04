@@ -13,7 +13,7 @@ public class DelfiArticleTitlesTest {
 
     private final String HOME_PAGE = "http://rus.delfi.lv";
     private final String MOBILE_HOME_PAGE = "http://m.rus.delfi.lv";
-    private final By ARTICLE = By.xpath(".//a[@class = 'top2012-title']");
+    private final By ARTICLE = By.xpath(".//a[@class='top2012-title']");
     private final By MOBILE_ARTICLE = By.xpath(".//a[@class='md-scrollpos']");
     private String Article1 = ("Из первых уст: 8 наблюдений о разнице жизни в Риге и Санкт-Петербурге");
     private String Article2 = ("Троицкий: Латвия и Эстония ошиблись, обращаясь с русскоязычными жителями высокомерно");
@@ -61,7 +61,7 @@ public class DelfiArticleTitlesTest {
         driver.close();
     }
 
-    }
+}
 
 
 
