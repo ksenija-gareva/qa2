@@ -1,3 +1,5 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -21,15 +23,18 @@ public class DelfiArticleTitlesTest {
     private String Article4 = ("В Латвии возникла нехватка вакцин для взрослых против дифтерии");
     private String Article5 = ("Трамп заявил о выходе из договора с Россией о ракетах средней и малой дальности");
     private WebDriver driver;
+    private final Logger LOGGER = LogManager.getLogger(DelfiArticleTitlesTest.class);
 
     @Test
     public void checkArticleTitles() {
 
+        LOGGER.info("I'm opening browser for my Test");
         System.setProperty("webdriver.gecko.driver", "/Users/ksenijagareva/Desktop/QA/geckodriver");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get(HOME_PAGE);
 
+        LOGGER.info("I'm creating a list of Articles");
         List<String> articleTitles = new ArrayList<String>();
         articleTitles.add(Article1);
         articleTitles.add(Article2);

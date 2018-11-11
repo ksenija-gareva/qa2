@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -25,7 +26,10 @@ public class AutomationPractice {
         driver.findElement(DRESSES).click();
         driver.findElement(ORANGE).click();
 
-
+    }
+    @AfterEach
+    public void closeDriver() {
+        driver.close();
     }
 
 }
