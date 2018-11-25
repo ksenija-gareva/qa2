@@ -9,11 +9,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.List;
 
 public class Practice {
-    private final By ARTICLE = By.xpath(".//h3[@class = 'top2012-title']");
-    private final By ARTICLE_TITLE = By.xpath(".//a[@class = 'top2012-title']");
-    private final By COMMENT_COUNT = By.xpath(".//a[@class = 'comment-count']");
-    private final By ARTICLE_PAGE = By.xpath(".//span[@itemprop = 'headline name']");
-    private final By COMMENT_PAGE = By.xpath(".//a[@class = 'comment-main-title-link']");
+    private final By ARTICLE = By.xpath(".//h3[@class='top2012-title']");
+    private final By ARTICLE_TITLE = By.xpath(".//a[@class='top2012-title']");
+    private final By COMMENT_COUNT = By.xpath(".//a[@class='comment-count']");
+    private final By ARTICLE_PAGE = By.xpath(".//span[@itemprop='headline name']");
+    private final By COMMENT_PAGE = By.xpath(".//a[@class='comment-main-title-link']");
     private final By REG_COMMENTS = By.xpath(".//a[contains(@class,'comment-thread-switcher-list-a-reg')]/span");
     private final By ANON_COMMENTS = By.xpath(".//a[contains(@class,'comment-thread-switcher-list-a-anon')]/span");
     private WebDriver driver;
