@@ -4,7 +4,6 @@ package lekcija7;
 import lekcija7.pages.ArticlePage;
 import lekcija7.pages.BaseFunc;
 import lekcija7.pages.HomePage;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

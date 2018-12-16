@@ -36,7 +36,7 @@ public class BaseFunction {
 
     }
 
-    public WebElement getWebelement(By locator) {
+    public WebElement getElement(By locator) {
         Assertions.assertFalse(driver.findElement(locator).isDisplayed(), "Error 404, not found");
         return driver.findElement(locator);
     }
@@ -51,7 +51,11 @@ public class BaseFunction {
     }
 
     public void selectFromDropdown(By locator, String text) {
-        Select dropdown = new Select(getWebelement(locator));
+        Select dropdown = new Select(getElement(locator));
         dropdown.selectByVisibleText(text);
+    }
+
+    public void closeDriver() {
+        driver.close();
     }
 }

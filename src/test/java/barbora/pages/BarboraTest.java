@@ -15,5 +15,7 @@ public class BarboraTest {
         RegistrationPage registrationPage = popUp.goToRegistrationPage();
         registrationPage.fillEmail("email@email.com");
         registrationPage.selectCity("Jūrmala");
+
+        baseFunction.closeDriver();
     }
 }

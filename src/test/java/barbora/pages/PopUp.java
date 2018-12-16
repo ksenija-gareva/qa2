@@ -14,7 +14,7 @@ public class PopUp {
 
     public RegistrationPage goToRegistrationPage() {
         baseFunction.waitForElement(REGISTER_TAB);
-        baseFunction.getWebelement(REGISTER_TAB).click();
+        baseFunction.getElement(REGISTER_TAB).click();
         return new RegistrationPage(baseFunction);
     }
 }
